@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+    "-//Hibernate/Hibernate Configuration DTD//EN" 
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+      <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <property name="connection.url">jdbc:mysql://localhost/test1</property>
+      <property name="connection.username">root</property>
+      <property name="connection.password">root</property>
+    <property name="show_sql">true</property>
+    <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+    <property name="hbm2ddl.auto">validate</property>
+    <property name="hibernate.connection.shard_id">1</property>
+    <property name="hibernate.shard.enable_cross_shard_relationship_checks">false</property>
+
+</session-factory>
+</hibernate-configuration>
